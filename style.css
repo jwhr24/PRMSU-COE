@@ -1,0 +1,1132 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  
+  header {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-scrolled {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Apply Orbitron to headlines */
+  .background-text, h2, h3, h4, h5, h6, .section-content h1, .about-text h1, .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700; /* Use 700 for bold */
+    font-size: 2em; 
+  }
+
+  /* Apply Raleway to content */
+  body, p, li, span {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /* CSS for smooth fade-in effect */
+  body {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  /* Optional: Add transition to specific elements to make them fade in smoothly */
+  .container, .header, .dropdown-menu, .department-details {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  /* When the page is loaded, make elements visible */
+  body.loaded {
+    opacity: 1;
+  }
+
+  /* Optional: When elements are loaded or visible, make them appear */
+  .container.loaded, .header.loaded, .dropdown-menu.loaded, .department-details.loaded {
+    opacity: 1;
+  }
+
+  /* New class for transparent background when burger menu is open */
+  .header-burger-open {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .logo-icon {
+    width: 70px;
+    height: auto;
+    margin-right: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: white;
+    background-color: #FA5005;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    width: 200px;
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #FA5005;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+}
+
+  /* Dropdown styles */
+.nav-links .dropdown .dropdown-menu {
+  display: none;
+}
+
+.nav-links .dropdown.active .dropdown-menu {
+  display: block;
+}
+
+.nav-links.active {
+  display: block; /* Or flex/grid depending on your layout */
+}
+
+
+  /* Background Image Section */
+  #background-image {
+    background: url('images/COE-image-2-alt.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .background-text {
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+/* Full-Screen Section */
+.full-screen-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#section1 {
+    background-image: url('images/COE-image-alt.jpg');
+    background-size: cover; /* Ensure the background image covers the section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Make the section take the full height of the viewport */
+    display: flex; /* Use Flexbox to center content */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center; /* Center text */
+}
+
+.about-text {
+    flex: 0 0 auto;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.transparent-container {
+    flex: 0 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%; /* Adjust width to fit smaller screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    margin-top: 20px; /* Add margin to create a gap between the elements */
+    margin-left: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .full-screen-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .transparent-container { 
+      order: 1; /* Move container above text in mobile view */ 
+      margin: 10px 0; 
+      margin-top: 20px; 
+    } 
+    .about-text { 
+      margin: 10px 0; 
+    }
+  }
+
+  /* Center Alignment for Desktop View */
+  @media (min-width: 769px) {
+    .nav-links {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  
+  /* Burger Menu Styles */
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+  }
+  
+  /* Departments Section */
+  #departments {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  #departments h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .department-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .department-logos img {
+    width: 185px;
+    height: auto;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .department-logos img:hover {
+    transform: scale(1.1);
+  }
+
+  /*About Us department*/ 
+  /* Styling for the section title */ 
+  .section-title { 
+    text-align: center; 
+    font-size: 2em; 
+    margin: 20px 0;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: -100px;
+}
+
+  .dept-logos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+  .department-logo {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .department-logo img {
+      width: 185px;
+      height: auto;
+      margin: 20px;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      outline: none; /* Outline visible by default */
+  }
+
+  .department-logo:hover img {
+      outline: 5px solid #FA5005;
+  }
+
+  .department-logo::after {
+      content: attr(data-department);
+      position: absolute;
+      top: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background-color: #000;
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+  }
+
+  .department-logo:hover::after {
+      opacity: 1;
+  }
+
+/* Overlay and department details container styles */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards;
+}
+
+.overlay.hidden { 
+  animation: fadeOut 0.5s forwards; 
+}
+
+.details-container {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  transform: scale(0.8);
+  animation: scaleUp 0.5s forwards;
+  margin-top: 60px; /* Add margin to avoid touching the navbar */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+  }
+
+  @keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+  }
+
+
+  /* Vision, Mission, and Quality Policy Section */
+  #vision-mission {
+    padding: 50px 20px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+  }
+  
+  #vision-mission h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #edf58b;
+  }
+  
+  /* Flex layout for Vision, Mission, and Quality Policy */
+  .vision-mission-content {
+    display: flex;
+    flex-direction: column; /* Column layout for desktop */
+    align-items: center; /* Center the content */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .vision-mission-content div {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; /* Full width for individual sections */
+    box-sizing: border-box;
+  }
+  
+  /* Styling for individual sections */
+  .vision-mission-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #edf58b;
+  }
+  
+  .vision-mission-content p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  /* Footer Section Styles */
+  #footer-content {
+    background-color: #ff6c2d;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 3000px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .footer-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .footer-campus-name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .footer-center {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-right a {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-right a:hover {
+    transform: scale(1.2);
+    color: #edf58b;
+  }
+  
+  /* Footer Bottom Styles */
+  footer {
+    background-color: #000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8em;
+    color: white;
+    width: 100%;
+  }
+  
+/* Faculty Section */
+.faculty-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  overflow: hidden;
+} 
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-content h1 {
+  margin: 20px 0;
+  font-size: 3em;
+}
+
+.section-content h2 {
+  margin: 20px 0;
+  font-size: 3em;
+  color:white;
+}
+
+.pub-content h2 {
+  margin: 20px 0;
+  font-size: 3em;
+  color:black;
+}
+
+
+.department {
+  margin-bottom: 40px;
+}
+
+.department h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.faculty-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.faculty-member {
+  text-align: center;
+  flex: 1 1 calc(25% - 15px); /* Four instructors per row on larger screens */
+  max-width: calc(25% - 15px);
+}
+
+.faculty-member img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.faculty-member p {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Design: Two instructors per row on mobile */
+@media (max-width: 768px) {
+  .faculty-member {
+      flex: 1 1 calc(50% - 15px); /* Two instructors per row */
+      max-width: calc(50% - 15px);
+  }
+}
+
+/* Responsive Design: Single column on very small screens */
+@media (max-width: 480px) {
+  .faculty-member {
+      flex: 1 1 100%; /* Full width */
+      max-width: 100%;
+  }
+}
+
+
+/* Extension */
+#section2 {
+  background-image: url('images/others/ext-1-alt.jpg');
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Make the section take the full height of the viewport */
+  display: flex; /* Use Flexbox to center content */
+  justify-content: left; /* Horizontally center */
+  align-items: left; /* Vertically center */
+  text-align: left; /* Center text */
+  color: #fff;
+  font-size: 1.5em;
+}
+
+#section3 {
+  background-image: url('images/COE-image-3-alt.jpg');
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Make the section take the full height of the viewport */
+  display: flex; /* Use Flexbox to center content */
+  justify-content: left; /* Horizontally center */
+  align-items: left; /* Vertically center */
+  text-align: left; /* Center text */
+  color: #fff;
+  font-size: 1.5em;
+}
+
+#section4 {
+  background-image: linear-gradient(to right, #FEC715,#303030);
+  height: 100vh; /* Make the section take the full height of the viewport */
+  display: flex; /* Use Flexbox to center content */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  text-align: center; /* Center text */
+  color: #fff;
+  padding: 20px;
+  flex-direction: column;
+}
+
+#section5 {
+  background-image: url('images/COE-faculty-2-alt.jpg');
+  background-size: cover; /* Ensure the background image covers the section */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Make the section take the full height of the viewport */
+  display: flex; /* Use Flexbox to center content */
+  justify-content: left; /* Horizontally center */
+  align-items: left; /* Vertically center */
+  text-align: left; /* Center text */
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Full-screen section with transparent overlay */
+.extension-section {
+  position: relative;
+  background-image: linear-gradient(to right, #000,#d0d0d0); /* Your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.extension-section .section-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  z-index: 0;
+  color: white;
+  z-index: 1000; /* Ensure the text and image are on top of the overlay */
+}
+
+.extension-section .text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.extension-section .text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.extension-section .text-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: whitesmoke;
+}
+
+.extension-section .image-content {
+  flex: 1;
+  text-align: center;
+}
+
+.extension-section .image-content img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/*Publications*/
+/* Research Publications Section */
+#research-publications-section {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* New description text styling */
+.section-description {
+  text-align: left;
+  font-size: 0.4em;
+  margin: 20px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.research-container {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.research-item {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.research-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.research-item ol {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.research-item li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.research-item a {
+  color: #FF4E01;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.research-item a:hover {
+  text-decoration: underline;
+}
+
+.research-item p {
+  font-style: italic;
+}
+
+/* Curricular Offerings */
+.curriculum-item {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.curriculum-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.curriculum-item ol {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.curriculum-item li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.curriculum-item a {
+  color: #FF4E01;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.curriculum-item a:hover {
+  text-decoration: underline;
+}
+
+.curriculum-item p {
+  font-weight: bold;
+}
+
+
+/* Common styling for Accomplishments and Reports sections */
+.info-section {
+  background-image: linear-gradient(to right, #fbdfaf, #ffbf64);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.info-section .section-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.info-section p {
+  font-size: 1rem;
+  color: black;
+  font-style: italic;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .extension-section .section-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    z-index: 2; /* Ensure the content is above the overlay */
+    color: white;
+  }
+
+  .extension-section .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .extension-section .text-content p {
+    font-size: 1rem;
+  }
+
+  .extension-section .image-content img {
+    max-width: 300px;
+  }
+}
+
+  .chairpersons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%; /* Ensure the sections take the full width */
+  }
+
+.dean-info h3 {
+  margin: 10px 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.dean-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 100px;
+  width: 100%; /* Ensure the sections take the full width */
+}
+
+.dean-info img, .chairperson img {
+    border-radius: 50%;
+    margin: 20px auto 40px auto; /* Add a gap below the image */
+    width: 150px;
+    height: auto;
+}
+
+.dean-info div, .chairperson div {
+    max-width: 600px;
+    text-align: center; /* Center the text */
+    margin: 20px auto; /* Center the text container horizontally */
+    padding-top: 20px; /* Add a gap above the text */
+  }
+
+.chairperson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 200px;
+}
+
+.chairperson img {
+    margin-bottom: 10px;
+}
+
+.chairperson h3 {
+    margin: 10px 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+#faculty-section {
+  background-image: url('images/COE-faculty-1-alt.jpg');
+  color: #fff;
+  font-size: 1.5em;
+}
+
+#dean-section {
+    background-image: linear-gradient(to right, #989898, #3b3b3b);
+    color: #fff;
+}
+
+#chairpersons-section {
+  background-image: linear-gradient(to bottom, #3b3b3b, #DC4B30);
+  color: #fff;
+}
+
+#faculty-members-section {
+  background-image: linear-gradient(to top, #00064d, #7c7c7c);
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    .section-content h1 {
+        font-size: 2em;
+        margin-top: 300px;
+    }
+    .dean-info, .chairpersons { 
+      flex-direction: column; /* Stack content vertically */ 
+    }
+    .dean-info img, .chairperson img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 20px; /* Add a gap below the image */
+    }
+
+    .dean-info div, .chairperson div {
+        max-width: 100%;
+        padding-top: 20px; /* Add a gap above the text */
+    }
+
+    .chairperson {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 122px; /* Adjusted top based on header height */
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 60px); /* Full screen minus header height */
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: transform 0.5s ease;
+      transform: translateY(-100%);
+    }
+  
+    .nav-links.active {
+      display: flex;
+      transform: translateY(0);
+    }
+  
+    .nav-links li {
+      margin: 20px 0;
+    }
+  
+    .nav-links li a {
+      font-size: 1.1em;
+      color: white;
+    }
+  
+    .dropdown .dropdown-menu {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform: none;
+      box-shadow: none;
+      background-color: none;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      display: none;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  
+    .burger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+  
+    .burger.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .burger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  
+    .vision-mission-content {
+      flex-direction: column;
+    }
+  
+    .vision-mission-content div {
+      width: 100%;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-left {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-right {
+      margin-top: 20px;
+    }
+  
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+    #section1 { 
+        flex-direction: column; 
+        padding: 20px; 
+        text-align: center; 
+    }
+    .section-title { 
+      margin-top: 25px; 
+      margin-bottom: 10px;
+    } 
+
+    .dept-logos { 
+      gap: 30px; 
+      margin-top: -10px;
+    } 
+
+    .department-logo { 
+      width: 100px; /* Smaller size for mobile */
+      height: auto; 
+    } 
+    .department-logo img { 
+      width: 100%;
+      height: auto; 
+      margin: 5px;
+    }
+
+    .details-container {
+      width: 90%;
+      padding: 10px;
+      margin-top: 60px; /* Adjust margin for mobile view */
+  }
+
+  .close-button {
+      font-size: 25px;
+  }
+  }
+  

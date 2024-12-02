@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Engineering</title>
+    <link rel="icon" type="image/x-icon" href="images/COE-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/COE-logo.png" alt="College Logo" class="logo-icon"> 
+                <span>COLLEGE OF ENGINEERING</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">HISTORY</a></li>
+                <li class="dropdown">
+                    <a href="#programs">ACADEMIC PROGRAMS <span class="arrow-down">&#9662;</span></a>
+                    <ul class="dropdown-menu" id="programsDropdown">
+                        <li><a href="curricular.html">CURRICULAR OFFERINGS</a></li>
+                        <li><a href="faculty.html">FACULTY</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#research">RESEARCH <span class="arrow-down">&#9662;</span></a>
+                    <ul class="dropdown-menu" id="researchDropdown">
+                        <li><a href="pub.html">PUBLICATIONS</a></li>
+                        <li><a href="ext.html">EXTENSIONS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <!-- First Section: Extension -->
+        <section class="full-screen-section" id="section5">
+            <div class="section-content">
+                <h1>Publications</h1>
+            </div>
+        </section>
+
+        <!-- Research Publications Section -->
+        <section id="research-publications-section" class="info-section">
+            <div class="pub-content">
+                <h2>Research Publications</h2>
+                <p class="section-description">The following contains soft copies of research manuscripts published in each department, alongside other official documents.</p>
+                <div class="research-container">
+                    <!-- Civil Engineering Section -->
+                    <div class="research-item">
+                        <h3>Civil Engineering</h3>
+                        <ol>
+                            <li><a href="https://drive.google.com/file/d/1D0A_tihMA52JyBupAmUC9wPHaWG01ue-/view" target="_blank">Research Journal 2019</a></li>
+                        </ol>
+                        <p class="description">Contents to be updated soon...</p>
+                    </div>
+                    
+                    <!-- Computer Engineering Section -->
+                    <div class="research-item">
+                        <h3>Computer Engineering</h3>
+                        <ol>
+                            <li><a href="https://drive.google.com/file/d/1DDX25CPBKZJNN2P0izx4V8egN4S1v_Cj/view" target="_blank">Driver Drowsiness Detection System (Barrera, et.al, 2020)</a></li>
+                            <li><a href="https://drive.google.com/file/d/1CbFrsNZcPtkSfJl-R2Ao8V8P8pe-awlx/view" target="_blank">Ramon Magsaysay Technological University-Graduate School Online Research Portal (Barrera, 2017)</a></li>
+                            <li><a href="https://drive.google.com/file/d/1hjqVulcaiHF9rgPyooc4fzkIteyjwCTa/view" target="_blank">Effects of Gender Stereotyping in Career Choices of the Students of Ramon Magsaysay Technological University School Year 2012-2013 (Barrera, et.al., 2013)</a></li>
+                            <li><a href="https://drive.google.com/file/d/1yGo8ROy-qwVncy0WV3jk9ovsG7U49b-R/view" target="_blank">IR-Based PC Remote Controller (Barrera, et.al., 2009)</a></li>
+                            <p class="description">Contents to be updated soon...</p>
+                        </ol>
+                    </div>
+
+                    <!-- Electrical Engineering Section -->
+                    <div class="research-item">
+                        <h3>Electrical Engineering</h3>
+                        <p class="description">Contents to be updated soon...</p>
+                    </div>
+
+                    <!-- Mechanical Engineering Section -->
+                    <div class="research-item">
+                        <h3>Mechanical Engineering</h3>
+                        <p class="description">Contents to be updated soon...</p>
+                    </div>
+
+                    <!-- Mining Engineering Section -->
+                    <div class="research-item">
+                        <h3>Mining Engineering</h3>
+                        <p class="description">Contents to be updated soon...</p>
+                    </div>
+
+                    <!-- Others Section -->
+                    <div class="research-item">
+                        <h3>Others</h3>
+                        <ol>
+                            <li><a href="https://drive.google.com/file/d/1JRwwACpxtTxdf_2pDQyGw2Tqvsy2JGxE/view" target="_blank">PRMSU Intellectual Propoerty Rights Manual</a></li>
+                            <li><a href="https://drive.google.com/file/d/12zq2nwBMpu8rilk5SE04L45-8bUkynxA/view?usp=share_link" target="_blank">Research Manual of Operations 2022</a></li>
+                            <li><a href="https://drive.google.com/file/d/1qu8FZ21f_pSlViZx4RZJdNiqcrjJkkmF/view" target="_blank">RMTU Research Manual 2017</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="footer-content">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="images/PRMSU-logo.png" alt="Campus Logo" class="footer-logo">
+                    <span class="footer-campus-name">President Ramon Magsaysay State University</span>
+                </div>
+                <div class="footer-center">
+                    <p>Palanginan, Iba, Zambales</p>
+                </div>
+                <div class="footer-right">
+                    <!-- Email: Opens Gmail or default email client -->
+                    <a href="mailto:online.coe@prmsu.edu.ph" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- Facebook: Opens Facebook page -->
+                    <a href="https://www.facebook.com/prmsucoe" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <!-- Phone: Allows direct call -->
+                    <a href="tel:09190699177">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-bottom">
+                <p>© 2024 PRMSU - College of Engineering. All rights reserved.</p>
+            </div>
+        </footer>                      
+    </main>    
+
+    <script src="script.js"></script>
+</body>
+</html>

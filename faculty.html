@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Engineering</title>
+    <link rel="icon" type="image/x-icon" href="images/COE-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/COE-logo.png" alt="College Logo" class="logo-icon"> 
+                <span>COLLEGE OF ENGINEERING</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">HISTORY</a></li>
+                <li class="dropdown">
+                    <a href="#programs" onclick="toggleDropdown('programsDropdown')">ACADEMIC PROGRAMS <span class="arrow-down">&#9662;</span></a>
+                    <ul class="dropdown-menu" id="programsDropdown">
+                        <li><a href="curricular.html">CURRICULAR OFFERINGS</a></li>
+                        <li><a href="faculty.html">FACULTY</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#research" onclick="toggleDropdown('researchDropdown')">RESEARCH <span class="arrow-down">&#9662;</span></a>
+                    <ul class="dropdown-menu" id="researchDropdown">
+                        <li><a href="pub.html">PUBLICATIONS</a></li>
+                        <li><a href="ext.html">EXTENSIONS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- First Section: Faculty -->
+        <section class="full-screen-section" id="faculty-section">
+            <div class="section-content">
+                <h1>Faculty</h1>
+            </div>
+        </section>
+
+        <!-- Second Section: College Dean -->
+        <section class="faculty-section" id="dean-section">
+            <div class="section-content">
+                <h2>College Dean</h2>
+                <div class="dean-info">
+                    <img src="images/faculty/coe-dean.jpg" alt="Dean Picture">
+                    <div>
+                        <h3>GILBERT D. DEBOMA, REE, M.Eng.</h3>
+                        <p>Engr Gilbert D. Deboma is a faculty of the College of Engineering for 24 years with an Academic Rank of Associate Professor V. He is a graduate of Bachelor of Science in Electrical Engineering at Technological Institute of the Philippines – Quezon City. He finished his Master of Science in Electronics Engineering at Andong National University – South Korea. He is currently taking up PhD in Agricultural Engineering at Central Luzon State University. Engr Deboma is an active member of the Institute of Integrated Electrical Engineers, Inc., the accredited professional organization of electrical practitioners of the Philippines.  He is the current dean of the College of Engineering and concurrent Program Chairperson of the Electrical Engineering Department.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Section: Program Chairpersons -->
+        <section class="faculty-section" id="chairpersons-section">
+            <div class="section-content">
+                <h2>Program Chairpersons</h2>
+                <div class="chairpersons">
+                    <div class="chairperson">
+                        <img src="images/faculty/program-chairmen/ce-progchair.jpg" alt="Chairperson 1">
+                        <div>
+                            <h3> FERDINAND TABLIGAN, RCE, M.Eng. </h3>
+                            <p>Program Chairperson of Bachelor of Science in Civil Engineering (BSCE).</p>
+                        </div>
+                    </div>
+                    <div class="chairperson">
+                        <img src="images/faculty/program-chairmen/cpe-progchair.jpg" alt="Chairperson 2">
+                        <div>
+                            <h3> MELOJEAN MARAVE, LPT, MSIT </h3>
+                            <p>Program Chairperson of Bachelor of Science in Computer Engineering (BSCpE).</p>
+                        </div>
+                    </div>
+                    <div class="chairperson">
+                        <img src="images/faculty/program-chairmen/ee-progchair.jpg" alt="Chairperson 3">
+                        <div>
+                            <h3> GILBERT DEBOMA, REE, M.Eng.</h3>
+                            <p>Program Chairperson of Bachelor of Science in Electrical Engineering (BSEE).</p>
+                        </div>
+                    </div>
+                    <div class="chairperson">
+                        <img src="images/faculty/program-chairmen/me-progchair.jpg" alt="Chairperson 4">
+                        <div>
+                            <h3>MARLON JAMES DEDICATORIA, RMEE, Ph.D.</h3>
+                            <p>Program Chairperson of Bachelor of Science in Mechanical Engineering (BSME).</p>
+                        </div>
+                    </div>
+                    <div class="chairperson">
+                        <img src="images/faculty/program-chairmen/em-progchair.jfif" alt="Chairperson 5">
+                        <div>
+                            <h3>DOROTHY JOYCE SOLPICO DESIERTO</h3>     
+                            <p>Program Chairperson of Bachelor of Science in Mining Engineering (BSEM).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: Faculty Members -->
+        <section class="faculty-section" id="faculty-members-section">
+            <div class="section-content">
+                <h2>Faculty Members</h2>
+                <div class="departments">
+                    <!-- Civil Engineering Department -->
+                    <div class="department">
+                        <h3>Civil Engineering</h3>
+                        <div class="faculty-list">
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr.  RONEL E. ROMERO.png" alt="Engr. RONEL E. ROMERO">
+                                <p>Engr. RONEL E. ROMERO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. JEMAR DALUSONG.png" alt="Engr. JEMAR DALUSONG">
+                                <p>Engr. JEMAR DALUSONG</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr.  RAYMOND ARAMAY.png" alt="Engr. RAYMOND ARAMAY">
+                                <p>Engr. RAYMOND ARAMAY</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. ABRAHAM ANTONIO.jpg.jpg" alt="Engr. ABRAHAM ANTONIO">
+                                <p>Engr. ABRAHAM ANTONIO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. MA. THEREZA VICHO.jpg.jpg" alt="Engr. MA. THEREZA VICHO">
+                                <p>Engr. MA. THEREZA VICHO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. VICTOR D. VICHO.jpg" alt="Engr. VICTOR VICHO">
+                                <p>Engr. VICTOR D. VICHO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. ELENA LYN TOMBALE.jpg.jpg" alt="Engr. ELENA LYN TOMBALE">
+                                <p>Engr. ELENA LYN TOMBALE</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. RYV ANTHONY BISQUERA.jpg" alt="Engr. RYV ANTHONY BISQUERA">
+                                <p>Engr. RYV ANTHONY BISQUERA</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr.  JOVEN MANANGAN.jpg.jpg" alt="Engr. JOVEN MANANGAN">
+                                <p>Engr. JOVEN MANANGAN</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. ELOISA ROMULO.jpg.jpg" alt="Engr. ELOISA ROMULO">
+                                <p>Engr. ELOISA ROMULO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr. MARKO ANTONIO FERNANDEZ.jpg" alt="Engr. MARKO ANTONIO FERNANDEZ">
+                                <p>Engr. MARKO ANTONIO FERNANDEZ</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ce-faculty/Engr.  ZENDREE ARAMAY.jpg.jpg" alt="Engr. ZENDREE ARAMAY">
+                                <p>Engr. ZENDREE ARAMAY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Similar structure for other departments -->
+                    <div class="department">
+                        <h3>Computer Engineering</h3>
+                        <div class="faculty-list">
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. RICKY S. BARRERA.png.png" alt="Engr. RICKY S. BARRERA">
+                                <p>Engr. RICKY S. BARRERA</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. BRYAN CARLOS B. ACAIN.png.png" alt="Engr. BRYAN CARLOS B. ACAIN">
+                                <p>Engr. BRYAN CARLOS B. ACAIN</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. OLIVER A. SABADO, JR..jpg" alt="Engr. OLIVER A. SABADO, JR.">
+                                <p>Engr. OLIVER A. SABADO, JR.</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. DIONISIO M. MARTIN, JR..jpg" alt="Engr. DIONISIO M. MARTIN, JR.">
+                                <p>Engr. DIONISIO M. MARTIN, JR.</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. FROILAN G. CANTILLO.jpg" alt="Engr. FROILAN G. CANTILLO">
+                                <p>Engr. FROILAN G. CANTILLO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. ALLAN JAY L. MORILLO.png.png" alt="Engr. ALLAN JAY L. MORILLO">
+                                <p>Engr. ALLAN JAY L. MORILLO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. DENNIZE JIANA R. BASILIO.jpg.jpg" alt="Engr. DENNIZE JIANA R. BASILIO">
+                                <p>Engr. DENNIZE JIANA R. BASILIO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. KIRK LEE P. LEOMO.png.png" alt="Engr. KIRK LEE P. LEOMO">
+                                <p>Engr. KIRK LEE P. LEOMO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/cpe-faculty/Engr. MARTEEN BERAVON REMOLACIO.jpg" alt="Engr. MARTEEN BERAVON REMOLACIO">
+                                <p>Engr. MARTEEN BERAVON REMOLACIO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="department">
+                        <h3>Electrical Engineering</h3>
+                        <div class="faculty-list">
+                            <div class="faculty-member">
+                                <img src="images/faculty/ee-faculty/Engr. MARK LESTER PARALLAG.jpg" alt="Engr. MARK LESTER PARALLAG">
+                                <p>Engr. MARK LESTER PARALLAG</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ee-faculty/Engr. DORIS H. MARQUEZ.png" alt="Engr. DORIS H. MARQUEZ">
+                                <p>Engr. DORIS H. MARQUEZ</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ee-faculty/Engr. SENATO ORIANZA.jpg" alt="Engr. SENATO ORIANZA">
+                                <p>Engr. SENATO ORIANZA</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ee-faculty/Engr. CHRISTIAN MARAFINA.jpg" alt="Engr. CHRISTIAN MARAFINA">
+                                <p>Engr. CHRISTIAN MARAFINA</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ee-faculty/Engr. FERNAN EDARAD.JPG" alt="Engr. FERNAN EDARAD">
+                                <p>Engr. VICTOR D. VICHO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/ee-faculty/Engr. RUE LEI BALICACO.jpg" alt="Engr. RUE LEI BALICACO">
+                                <p>Engr. RUE LEI BALICACO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="department">
+                        <h3>Mechanical Engineering</h3>
+                        <div class="faculty-list">
+                            <div class="faculty-member">
+                                <img src="images/faculty/me-faculty/Engr.  MA. KARLA JESSICA BAUTISTA.jpg" alt="MA. KARLA JESSICA BAUTISTA">
+                                <p>MA. KARLA JESSICA BAUTISTA</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/me-faculty/Engr. JASPER ANTHONY CUEVAS.jpg" alt="Engr. JASPER ANTHONY CUEVAS">
+                                <p>Engr. JASPER ANTHONY CUEVAS</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/me-faculty/Engr. MICHAEL ROMUALDO.jpg" alt="Engr. MICHAEL ROMUALDO">
+                                <p>Engr. RMICHAEL ROMUALDO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/me-faculty/Engr. NHOELLE PADUA.jpg" alt="Engr. NHOELLE PADUA">
+                                <p>Engr. NHOELLE PADUA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="department">
+                        <h3>Allied and General Education</h3>
+                        <div class="faculty-list">
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Engr. MELISSA M. EBUE.png" alt="Engr. MELISSA M. EBUE">
+                                <p>Engr. MELISSA M. EBUE</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Engr. CLARISSE HOPE M. RICO.jpg" alt="Engr. CLARISSE HOPE M. RICO">
+                                <p>Engr. CLARISSE HOPE M. RICO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Dr. EMELYN E. BUGAYONG.jpg" alt="Dr. EMELYN E. BUGAYONG">
+                                <p>Dr. EMELYN E. BUGAYONG</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Engr. CINDY DULLAS.jpg" alt="Engr. CINDY DULLAS">
+                                <p>Engr. CINDY DULLAS</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Dr. EDNA PUNZALAN.jpg" alt="Dr. EDNA PUNZALAN">
+                                <p>Dr. EDNA PUNZALAN</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Ms. JANE D. DANILA.jpg" alt="Ms. JANE D. DANILA">
+                                <p>Ms. JANE D. DANILA</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Mr. LUCIANO MEDRANO.jpg" alt="Mr. LUCIANO MEDRANO">
+                                <p>Mr. LUCIANO MEDRANO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Ms. APRIL BESA.jpg" alt="Ms. APRIL BESA">
+                                <p>Ms. APRIL BESA</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Ms. SANTOS, MADELLE.jpg" alt="Ms. SANTOS, MADELLE">
+                                <p>Ms. MADELLE SANTOS</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Ms. MONICA PARANGAT.jpg" alt="Ms. MONICA PARANGAT">
+                                <p>Ms. MONICA PARANGAT</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Ms. KAREN QUITORIANO.jpg" alt="Ms. KAREN QUITORIANO">
+                                <p>Ms. KAREN QUITORIANO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Ms. JIO ERIKA PELINIO.jpg" alt="Ms. JIO ERIKA PELINIO">
+                                <p>Ms. JIO ERIKA PELINIO</p>
+                            </div>
+                            <div class="faculty-member">
+                                <img src="images/faculty/allied-gen-ed-faculty/Ms. MAE JOYCE VELARDE.jpg" alt="Ms. MAE JOYCE VELARDE">
+                                <p>Ms. MAE JOYCE VELARDE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer-content">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <img src="images/PRMSU-logo.png" alt="Campus Logo" class="footer-logo">
+                    <span class="footer-campus-name">President Ramon Magsaysay State University</span>
+                </div>
+                <div class="footer-center">
+                    <p>Palanginan, Iba, Zambales</p>
+                </div>
+                <div class="footer-right">
+                    <!-- Email: Opens Gmail or default email client -->
+                    <a href="mailto:online.coe@prmsu.edu.ph" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- Facebook: Opens Facebook page -->
+                    <a href="https://www.facebook.com/prmsucoe" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <!-- Phone: Allows direct call -->
+                    <a href="tel:09190699177">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-bottom">
+                <p>© 2024 PRMSU - College of Engineering. All rights reserved.</p>
+            </div>
+        </footer>                      
+    </main>    
+
+    <script src="script.js"></script>
+</body>
+</html>
